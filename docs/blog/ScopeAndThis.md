@@ -108,7 +108,7 @@ this关键字是JavaScript中最复杂的机制之一，This其实 就是一个�
 
 ![默认](/MyBlog/blog/bangding1.jpg)
 
-如果在浏览器环境中运行，那么结果就是 Hello,wejoydata
+如果在浏览器环境中运行，那么结果就是 Hello,world
 但是如果在node环境中运行，结果就是 Hello,undefined
 
 ### 隐式绑定
@@ -124,7 +124,7 @@ function sayHi() {
   console.log('Hello', this.name)
 }
 var person2 = {
-  name: 'wejoydata',
+  name: 'world',
   sayHi: sayHi
 }
 var person1 = {
@@ -134,7 +134,7 @@ var person1 = {
 person1.friend.sayHi()
 ```
 
-结果是： Hello, wejoydata
+结果是： Hello, world
 
 为什么呢？
 只有最后一层调用才会确定this指向的是什么，所以我们只需要关注最后一层，即此处的friend。
